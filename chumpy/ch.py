@@ -23,6 +23,8 @@ import collections
 from copy import deepcopy
 from functools import reduce
 
+if not hasattr(inspect, 'getargspec'):
+    inspect.getargspec = inspect.getfullargspec
 
 
 # Turn this on if you want the profiler injected
